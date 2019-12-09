@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="358 178 886 366" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000099" x="359.976" y="279.122" width="883.794" height="263.258"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="801.873" y="416.451">
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="681.936" y="179.517" width="239.709" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="681.936" y="179.517" width="239.709" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="801.79" y="218.453">
+      <tspan x="801.79" y="218.453">Find Document</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="681.764" y="314.116" width="239.29" height="80.8087"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="681.764" y="314.116" width="239.29" height="80.8087"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="801.409" y="356.109">
+      <tspan x="801.409" y="356.109">Do something</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="801.79" y1="254.212" x2="801.488" y2="301.88"/>
+    <polygon style="fill: #ffffff" points="796.488,301.848 801.424,311.88 806.488,301.912 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="796.488,301.848 801.424,311.88 806.488,301.912 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="683.15" y="440.808" width="236.49" height="85"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="683.15" y="440.808" width="236.49" height="85"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="801.395" y="484.897">
+      <tspan x="801.395" y="484.897">Save Document</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="801.41" y1="394.926" x2="801.4" y2="428.572"/>
+    <polygon style="fill: #ffffff" points="796.4,428.57 801.397,438.572 806.4,428.573 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="796.4,428.57 801.397,438.572 806.4,428.573 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="988.054" y="180.426" width="239.709" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="988.054" y="180.426" width="239.709" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1107.91" y="219.362">
+      <tspan x="1107.91" y="219.362">Find Document</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="989.18" y="315.026" width="239.29" height="80.8087"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="989.18" y="315.026" width="239.29" height="80.8087"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1108.83" y="357.019">
+      <tspan x="1108.83" y="357.019">Do something</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1107.91" y1="255.12" x2="1108.64" y2="302.791"/>
+    <polygon style="fill: #ffffff" points="1103.64,302.868 1108.79,312.79 1113.64,302.715 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1103.64,302.868 1108.79,312.79 1113.64,302.715 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="374.656" y="179.364" width="239.709" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="374.656" y="179.364" width="239.709" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="494.51" y="218.3">
+      <tspan x="494.51" y="218.3">Create Document</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="375.782" y="313.964" width="239.29" height="80.8087"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="375.782" y="313.964" width="239.29" height="80.8087"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="495.427" y="355.957">
+      <tspan x="495.427" y="355.957">Save Document</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="494.51" y1="254.058" x2="495.241" y2="301.729"/>
+    <polygon style="fill: #ffffff" points="490.241,301.806 495.394,311.728 500.24,301.653 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="490.241,301.806 495.394,311.728 500.24,301.653 "/>
+  </g>
+</svg>

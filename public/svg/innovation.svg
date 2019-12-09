@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="616 182 768 374" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="623.275" y1="516.002" x2="622.978" y2="197.102"/>
+    <polygon style="fill: #ffffff" points="627.978,197.097 622.969,187.102 617.978,197.107 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="627.978,197.097 622.969,187.102 617.978,197.107 "/>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="623.982" y1="515.295" x2="1369.82" y2="515.145"/>
+    <polygon style="fill: #ffffff" points="1369.82,520.145 1379.82,515.143 1369.82,510.145 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1369.82,520.145 1379.82,515.143 1369.82,510.145 "/>
+  </g>
+  <text font-size="28.2218" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="1143.06" y="547.669">
+    <tspan x="1143.06" y="547.669">time &amp; money</tspan>
+  </text>
+  <path style="fill: none; fill-opacity:0; stroke-width: 6; stroke: #000000" d="M 775.716 493.559 C 933.285,484.046 942.204,459.073 976.096,379.397 C 1009.99,299.721 1017.07,213.246 1195.01,211.029"/>
+  <text font-size="28.2218" style="fill: #000000;text-anchor:start;font-family:sans-serif;font-style:normal;font-weight:normal" x="648.564" y="239.814">
+    <tspan x="648.564" y="239.814">values</tspan>
+  </text>
+</svg>

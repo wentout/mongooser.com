@@ -1,0 +1,394 @@
+<div class="ft-section">
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 3rem 0 3rem 0">Challenge III:
+					<br>
+					<br>Nested Schema</h1>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Nested Schema Itself</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+		const Schema = mongoose.Schema;
+		const NestedSchema = new Schema({
+			name : {
+				type : String,
+			}
+		});
+		const MySchema = new Schema({
+			array : [ NestedSchema ],
+		});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Nested Schema Itself</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+		const Schema = mongoose.Schema;
+		const <mark>NestedSchema</mark> = new Schema({
+			name : {
+				type : String,
+			}
+		});
+		const MySchema = new Schema({
+			array : [ <mark>NestedSchema</mark> ],
+		});
+					</code>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Nested [ Virtual ] .set & .markModified</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	NestedSchema.virtual('setNested')
+		.set(function (values) {
+			// here must be some validation
+			values.forEach(name => {
+				this.array.push({ name });
+			});
+			this.parent().markModified('array');
+		});
+	document.setNested(['name1', 'name2' /* ... */]);
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Nested [ Virtual ] .set & .markModified</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	NestedSchema.virtual(<mark>'setNested'</mark>)
+		.set(function (values) {
+			// here must be some validation
+			values.forEach(name => {
+				this.array.push({ name });
+			});
+			this.<mark>parent().</mark>markModified('array');
+		});
+	document.<mark>setNested</mark>(['name1', 'name2' /* ... */]);
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Nested Schema .pre('save') check</h3>
+				<pre class="language-javascript pad40">
+					<code class="language-javascript font20">
+	const MyModel = mongoose.model( 'MyModelName', MySchema );
+	
+	const document = new MyModel({});
+	document.array.push({ name : 'some name' });
+		
+	NestedSchema.pre('save', function () {
+		// here we can check array changes, but
+		// it will be better to check 4 real ->
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Nested Schema .pre('save') check</h3>
+				<pre class="language-javascript pad40">
+					<code class="language-javascript font20">
+	const MyModel = mongoose.model( 'MyModelName', MySchema );
+	
+	const document = new MyModel({});
+	document.array.push({ name : 'some name' });
+		
+	NestedSchema.<mark>pre</mark>('<mark>save</mark>', function () {
+		// here we can check array changes, but
+		// it will be better to check 4 real ->
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Parent Virtual [ Nested ] .get .set & .markModified</h3>
+				<table>
+					<tr>
+						<td class="w50">
+							<pre class="language-javascript pad80 font14" data-src="data/v_nested1.js">
+								<code class="language-javascript"></code></pre>
+						</td>
+						<td class="w50">
+							<pre class="language-javascript pad80 font14" data-src="data/v_nested2.js">
+								<code class="language-javascript"></code></pre>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	// parent nested schema
+	const nestedParent = new Schema({
+		// some props
+	});
+	
+	// base schema for future model
+	const baseSchema = new Schema({
+		nesteds : [ nestedParent ]
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	// parent nested schema
+	const <mark>nestedParent</mark> = new Schema({
+		// some props
+	});
+	
+	// base schema for future model
+	const baseSchema = new Schema({
+		nesteds : [ <mark>nestedParent</mark> ]
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	// parent nested schema
+	const <mark>nestedParent</mark> = new Schema({
+		// some props
+	});
+	
+	// base schema for future model
+	const <mark>baseSchema</mark> = new Schema({
+		nesteds : [ <mark>nestedParent</mark> ]
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	// nested schema first discriminator
+	const nestedOne = new Schema({
+		// some props
+	});
+	
+	// nested schema second discriminator
+	const nestedTwo = new Schema({
+		// some props
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	// nested schema first discriminator
+	const <mark>nestedOne</mark> = new Schema({
+		// some props
+	});
+	
+	// nested schema second discriminator
+	const <mark>nestedTwo</mark> = new Schema({
+		// some props
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	
+	// casting discriminators for all this stuff
+	// new models 'one' and 'two' will be created
+	
+	<mark>baseSchema</mark>.path('nesteds')
+		// nested discriminators defs
+		.discriminator('one', nestedOne)
+		.discriminator('two', nestedTwo);
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	
+	// casting discriminators for all this stuff
+	// new models 'one' and 'two' will be created
+	
+	baseSchema.<mark>path</mark>('nesteds')
+		// nested discriminators defs
+		.discriminator('one', nestedOne)
+		.discriminator('two', nestedTwo);
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	
+	// casting discriminators for all this stuff
+	// new models 'one' and 'two' will be created
+	
+	baseSchema.<mark>path</mark>('<mark>nesteds</mark>')
+		// nested discriminators defs
+		.discriminator('one', nestedOne)
+		.discriminator('two', nestedTwo);
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	
+	// casting discriminators for all this stuff
+	// new models 'one' and 'two' will be created
+	
+	<mark>baseSchema</mark>.path('<mark>nesteds</mark>')
+		// nested discriminators defs
+		.discriminator('one', <mark>nestedOne</mark>)
+		.discriminator('two', <mark>nestedTwo</mark>);
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	baseSchema.methods.setNested = (type) => {
+			// this is just an example
+			baseSchema.nested.push({
+			
+				// discriminatorKey
+				__t : type
+				
+			});
+		};
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<pre class="language-javascript pad80">
+					<code class="language-javascript font20">
+	baseSchema.methods.setNested = ( <mark>type</mark> ) => {
+			// this is just an example
+			baseSchema.nested.push({
+			
+				// <mark>discriminatorKey</mark>
+				<mark>__t</mark> : <mark>type</mark>
+				
+			});
+		};
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators + Nested Scheme</h3>
+				<table>
+					<tr>
+						<td class="w50">
+							<pre data-src="data/d_ns_1.js" class="language-javascript pad80 font14">
+										<code class="language-javascript"></code>
+									</pre>
+						</td>
+						<td class="w50">
+							<pre data-src="data/d_ns_2.js" class="language-javascript pad80 font14">
+										<code class="language-javascript"></code>
+									</pre>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h3>Nested Scheme Discriminators & Virtuals</h3>
+				<table>
+					<tr>
+						<td class="w50">
+							<pre data-src="data/d_nsv_1.js" class="language-javascript pad80 font14">
+										<code class="language-javascript"></code>
+									</pre>
+						</td>
+						<td class="w50">
+							<pre data-src="data/d_nsv_2.js" class="language-javascript pad80 font14">
+										<code class="language-javascript"></code>
+									</pre>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center black_on_white">
+			<div class="stacked-center">
+				<h1>Polymorhpism of Data & Behaviour</h1>
+				<center>
+						<div style="width:1300px" data-svg="poly"></div>
+				</center>
+			</div>
+		</div>
+		<div class="stack-center black_on_white ft-fragment">
+			<div class="stacked-center">
+				<h1>Polymorhpism of Data & Behaviour</h1>
+				<center>
+						<div style="width:1300px" data-svg="poly_struct"></div>
+				</center>
+			</div>
+		</div>
+	</div>
+</div>

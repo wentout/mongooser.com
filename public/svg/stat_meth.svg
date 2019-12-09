@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="352 284 1147 393" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="353.243" y="285.659" width="1144.32" height="390.646"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="353.243" y="285.659" width="1144.32" height="390.646"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="925.402" y="486.682">
+      <tspan x="925.402" y="486.682"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="391.079" y="316.835" width="422.8" height="329.165"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="391.079" y="316.835" width="422.8" height="329.165"/>
+    <text font-size="39.5111" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="602.479" y="360.701">
+      <tspan x="602.479" y="360.701">Methods</tspan>
+      <tspan x="602.479" y="410.09"></tspan>
+      <tspan x="602.479" y="459.479"></tspan>
+      <tspan x="602.479" y="508.867"></tspan>
+      <tspan x="602.479" y="558.256"></tspan>
+      <tspan x="602.479" y="607.645"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="438.2" y="393" width="323.8" height="61.0588"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="438.2" y="393" width="323.8" height="61.0588"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="600.1" y="425.118">
+      <tspan x="600.1" y="425.118">Collection Element</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="438.2" y="474" width="323.8" height="61.0588"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="438.2" y="474" width="323.8" height="61.0588"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="600.1" y="506.118">
+      <tspan x="600.1" y="506.118">Document Life Cycle</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="439.2" y="554" width="323.8" height="61.0588"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="439.2" y="554" width="323.8" height="61.0588"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="601.1" y="586.118">
+      <tspan x="601.1" y="586.118">Customisable</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1039.19" y="318.121" width="422.8" height="329.165"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1039.19" y="318.121" width="422.8" height="329.165"/>
+    <text font-size="39.5111" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:700" x="1250.59" y="361.987">
+      <tspan x="1250.59" y="361.987">Statics</tspan>
+      <tspan x="1250.59" y="411.376"></tspan>
+      <tspan x="1250.59" y="460.765"></tspan>
+      <tspan x="1250.59" y="510.154"></tspan>
+      <tspan x="1250.59" y="559.543"></tspan>
+      <tspan x="1250.59" y="608.932"></tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1085.85" y="394.243" width="323.8" height="61.0588"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1085.85" y="394.243" width="323.8" height="61.0588"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1247.75" y="426.361">
+      <tspan x="1247.75" y="426.361">Model Controller</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1087.56" y="474.365" width="323.8" height="61.0588"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1087.56" y="474.365" width="323.8" height="61.0588"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1249.46" y="506.484">
+      <tspan x="1249.46" y="506.484">All Code Life Cycle</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1086.85" y="554.976" width="323.8" height="61.0588"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1086.85" y="554.976" width="323.8" height="61.0588"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:monospace;font-style:normal;font-weight:normal" x="1248.75" y="587.094">
+      <tspan x="1248.75" y="587.094">Polymorphic</tspan>
+    </text>
+  </g>
+  <text font-size="112.889" style="fill: #000000;text-anchor:start;font-family:monospace;font-style:normal;font-weight:normal" x="868.626" y="510.135">
+    <tspan x="868.626" y="510.135">OR</tspan>
+  </text>
+</svg>

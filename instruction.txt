@@ -1,0 +1,17 @@
+How to use this Stuff
+
+1. npm install
+2. npm start ~ stop , then tail -f ./log/dev.log -n 100
+3. npm test : jshint
+4. NODE_PATH=. node app
+5. use ./repl.js to attach to running process in dev-mode
+
+Requirements : 
+
+1. Developed with Node.JS 8.2
+2. UI tested on Google Chrome 60 under Manjaro Linux
+3. Google Chrome screen resolution 1920x1080, no flex
+
+The Front-End is built extremely fast, most of time spent for Server.
+
+Hope it worths.

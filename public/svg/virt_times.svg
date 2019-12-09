@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="-257 -300 2153 1009" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g>
+  <rect style="fill: #ffffff" x="-247" y="-289.292" width="2132.5" height="988.99"/>
+  <rect style="fill: none; fill-opacity:0; stroke-width: 20; stroke: #000000" x="-247" y="-289.292" width="2132.5" height="988.99"/>
+  <g>
+    <rect style="fill: #ffffff" x="239.488" y="88.0962" width="1149.15" height="565.278"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="239.488" y="88.0962" width="1149.15" height="565.278"/>
+    <text font-size="31.0444" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="814.062" y="132.296">
+      <tspan x="814.062" y="132.296">Real World Rules</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="257.988" y="165.475" width="443.991" height="475.695"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="257.988" y="165.475" width="443.991" height="475.695"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="479.983" y="409.022">
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="794.856" y="165.193" width="573.198" height="474.272"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="794.856" y="165.193" width="573.198" height="474.272"/>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1081.45" y="210.262">
+      <tspan x="1081.45" y="210.262">Virtual Usage</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 20; stroke: #000099" x="811.276" y="366.624" width="536.242" height="130.317"/>
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal" x="1079.4" y="437.482">
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1089.14" y="256.928" width="239.709" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1089.14" y="256.928" width="239.709" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1209" y="295.864">
+      <tspan x="1209" y="295.864">Find Document</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1088.97" y="391.526" width="239.29" height="80.8087"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1088.97" y="391.526" width="239.29" height="80.8087"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1208.62" y="433.519">
+      <tspan x="1208.62" y="433.519">Do something</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1209" y1="331.624" x2="1208.7" y2="379.29"/>
+    <polygon style="fill: #ffffff" points="1203.7,379.258 1208.63,389.29 1213.7,379.322 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1203.7,379.258 1208.63,389.29 1213.7,379.322 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="1090.36" y="518.218" width="236.49" height="85"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1090.36" y="518.218" width="236.49" height="85"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1208.6" y="562.307">
+      <tspan x="1208.6" y="562.307">Save Document</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1208.62" y1="472.336" x2="1208.61" y2="505.982"/>
+    <polygon style="fill: #ffffff" points="1203.61,505.98 1208.6,515.982 1213.61,505.983 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1203.61,505.98 1208.6,515.982 1213.61,505.983 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="828.544" y="256.276" width="239.709" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="828.544" y="256.276" width="239.709" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="948.398" y="295.212">
+      <tspan x="948.398" y="295.212">Create Document</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="828.372" y="390.874" width="239.29" height="80.8087"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="828.372" y="390.874" width="239.29" height="80.8087"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="948.017" y="432.867">
+      <tspan x="948.017" y="432.867">Do something</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="948.398" y1="330.972" x2="948.096" y2="378.638"/>
+    <polygon style="fill: #ffffff" points="943.096,378.606 948.032,388.638 953.096,378.67 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="943.096,378.606 948.032,388.638 953.096,378.67 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="829.758" y="517.566" width="236.49" height="85"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="829.758" y="517.566" width="236.49" height="85"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="948.003" y="561.655">
+      <tspan x="948.003" y="561.655">Save Document</tspan>
+    </text>
+  </g>
+  <g>
+    <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="948.018" y1="471.684" x2="948.008" y2="505.33"/>
+    <polygon style="fill: #ffffff" points="943.008,505.328 948.005,515.33 953.008,505.331 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="943.008,505.328 948.005,515.33 953.008,505.331 "/>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="278.484" y="276.312" width="397.713" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="278.484" y="276.312" width="397.713" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="477.34" y="315.248">
+      <tspan x="477.34" y="315.248">Life-Cycle Interop Rules</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="278.628" y="368.788" width="397.713" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="278.628" y="368.788" width="397.713" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="477.484" y="407.724">
+      <tspan x="477.484" y="407.724">Dependent Sub-Sys Calcs</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="278.562" y="461.558" width="397.713" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="278.562" y="461.558" width="397.713" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="477.418" y="500.494">
+      <tspan x="477.418" y="500.494">Nested Docs &amp; Refs Calcs</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="278.524" y="184.648" width="397.713" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="278.524" y="184.648" width="397.713" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="477.38" y="223.584">
+      <tspan x="477.38" y="223.584">External APIs State Deps</tspan>
+    </text>
+  </g>
+  <g>
+    <rect style="fill: #ffffff" x="279.232" y="552.804" width="397.713" height="74.6945"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="279.232" y="552.804" width="397.713" height="74.6945"/>
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="478.088" y="591.74">
+      <tspan x="478.088" y="591.74">And other 2-heavy ops...</tspan>
+    </text>
+  </g>
+  <g>
+    <polygon style="fill: #ffffff" points="767.566,427.686 727.566,427.686 727.566,417.686 707.566,437.686 727.566,457.686 727.566,447.686 767.566,447.686 767.566,457.686 787.566,437.686 767.566,417.686 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="767.566,427.686 727.566,427.686 727.566,417.686 707.566,437.686 727.566,457.686 727.566,447.686 767.566,447.686 767.566,457.686 787.566,437.686 767.566,417.686 "/>
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="767.566,427.686 727.566,427.686 727.566,417.686 707.566,437.686 727.566,457.686 727.566,447.686 767.566,447.686 767.566,457.686 787.566,437.686 767.566,417.686 "/>
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="243.868" y="-87.0282" width="1140.99" height="164.107"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 10; stroke: #000000" x="243.868" y="-87.0282" width="1140.99" height="164.107"/>
+    <text font-size="45.1556" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="814.362" y="-1.8467">
+      <tspan x="814.362" y="-1.8467">B R E A K I N G &nbsp; R U L E S</tspan>
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="1402.16" y="-87.7244" width="206.861" height="738.165"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 10; stroke: #000000" x="1402.16" y="-87.7244" width="206.861" height="738.165"/>
+    <text font-size="45.1556" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1505.59" y="-25.9587">
+      <tspan x="1515.59" y="-25.9587">D</tspan>
+      <tspan x="1515.59" y="30.4857">Y</tspan>
+      <tspan x="1515.59" y="86.9302">N</tspan>
+      <tspan x="1515.59" y="143.375">A</tspan>
+      <tspan x="1515.59" y="199.819">M</tspan>
+      <tspan x="1515.59" y="256.264">I</tspan>
+      <tspan x="1515.59" y="312.708">C</tspan>
+      <tspan x="1515.59" y="425.597">C</tspan>
+      <tspan x="1515.59" y="482.041">O</tspan>
+      <tspan x="1515.59" y="538.486">S</tspan>
+      <tspan x="1503.59" y="594.93">T</tspan>
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="19.0148" y="-86.707" width="206.861" height="738.165"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 10; stroke: #000000" x="19.0148" y="-86.707" width="206.861" height="738.165"/>
+    <text font-size="45.1556" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="122.445" y="3.28092">
+      <tspan x="132.445" y="3.28092">T</tspan>
+      <tspan x="132.445" y="59.7254">I</tspan>
+      <tspan x="132.445" y="116.17">M</tspan>
+      <tspan x="132.445" y="172.614">E</tspan>
+      <tspan x="132.445" y="285.503">T</tspan>
+      <tspan x="132.445" y="341.948">R</tspan>
+      <tspan x="132.445" y="398.392">A</tspan>
+      <tspan x="132.445" y="454.836">I</tspan>
+      <tspan x="132.445" y="511.281">T</tspan>
+      <tspan x="120.445" y="567.725">S</tspan>
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="-203.758" y="-86.8316" width="206.861" height="738.165"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 10; stroke: #000000" x="-203.758" y="-86.8316" width="206.861" height="738.165"/>
+    <text font-size="45.1556" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="-100.328" y="3.15632">
+      <tspan x="-90.328" y="3.15632">S</tspan>
+      <tspan x="-90.328" y="59.6008">C</tspan>
+      <tspan x="-90.328" y="116.045">H</tspan>
+      <tspan x="-90.328" y="172.49">E</tspan>
+      <tspan x="-90.328" y="228.934">D</tspan>
+      <tspan x="-90.328" y="285.379">U</tspan>
+      <tspan x="-90.328" y="341.823">L</tspan>
+      <tspan x="-90.328" y="398.267">E</tspan>
+      <tspan x="-90.328" y="454.712">S</tspan>
+      <tspan x="-90.328" y="567.601">etc</tspan>
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="1625.1" y="-87.7156" width="206.861" height="738.165"/>
+    <rect style="fill: none; fill-opacity:0; stroke-width: 10; stroke: #000000" x="1625.1" y="-87.7156" width="206.861" height="738.165"/>
+    <text font-size="45.1556" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="1728.53" y="-25.9499">
+      <tspan x="1738.53" y="-25.9499">W</tspan>
+      <tspan x="1738.53" y="30.4945">E</tspan>
+      <tspan x="1738.53" y="86.939">A</tspan>
+      <tspan x="1738.53" y="143.383">K</tspan>
+      <tspan x="1738.53" y="256.272">C</tspan>
+      <tspan x="1738.53" y="312.717">O</tspan>
+      <tspan x="1738.53" y="369.161">N</tspan>
+      <tspan x="1738.53" y="425.606">T</tspan>
+      <tspan x="1738.53" y="482.05">E</tspan>
+      <tspan x="1738.53" y="538.495">X</tspan>
+      <tspan x="1726.53" y="594.939">T</tspan>
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <text font-size="84.6667" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal" x="819.251" y="-159.381">
+      <tspan x="819.251" y="-159.381">N A M E S P A C E &nbsp; E S C A L A T I O N</tspan>
+    </text>
+  </g>
+</g>
+</svg>

@@ -1,0 +1,310 @@
+<div class="ft-section">
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 3rem 0 3rem 0">Mongoose.js Basics</h1>
+				<img class="ft-fragment" src="img/it.jpeg">
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<p style="margin-bottom: 0px">tools I prefer</p>
+				<center>
+					<table>
+						<tr>
+							<td style="padding-right: 40px">
+								<asciinema-player src="cast/repl_show.cast" cols="76" rows="17" font-size="small" speed="3">
+								</asciinema-player>
+							</td>
+							<td>
+								<img src="img/robo3t.png">
+							</td>
+						</tr>
+						<tr>
+							<td class="ft-fragment">
+								<img src="img/debugger.png">
+							</td>
+							<td class="ft-fragment">
+								<img src="img/mongo_cli.png">
+							</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Schema Definition: Object</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	const mongoose = require('mongoose');
+
+	const SchemaName = new mongoose.Schema({
+		// some values
+		text    : String,
+		value   : Number,
+	});
+						</code>
+					</pre>
+			</div>
+		</div>
+		<div class="stack-center">
+			<div class="stacked-center ft-fragment stackCover">
+				<h3>Schema Definition: Object</h3>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font20">
+	const mongoose = require('mongoose');
+	
+	const SchemaName = new mongoose.Schema({
+		// some values
+		text    : <mark>String</mark>,
+		value   : <mark>Number</mark>,
+	});
+							</code>
+						</pre>
+			</div>
+		</div>
+		<div class="stack-center">
+			<div class="stacked-center ft-fragment stackCover">
+				<h3>Schema Definition: OpTioNs</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	const SchemaName = new mongoose.Schema({
+		// some values
+	}, {
+		// Schema Creation Options
+		minimize         : false,
+		autoIndex        : conf.db.autoIndex,
+		// and so on...
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center">
+			<div class="stacked-center ft-fragment stackCover">
+				<h3>Schema Definition: OpTioNs</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	const SchemaName = new mongoose.Schema({
+		// some values
+	}, {
+		// <mark>Schema Creation Options</mark>
+		minimize         : false,
+		autoIndex        : conf.db.autoIndex,
+		// and so on...
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center">
+			<div class="stacked-center ft-fragment stackCover">
+				<h3>Model Definition & Collection Element</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	// ( modelName, Schema )
+	const model = mongoose.model('review', Review);
+	
+	const newReview = new mongoose.model('review', {
+		text    : 'very good',
+		value   : 10,
+	});
+	
+	newReview.save(console.log);</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center">
+			<div class="stacked-center ft-fragment stackCover">
+				<h3>Model Definition & Collection Element</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	// ( modelName, Schema )
+	const model = mongoose.model('review', Review);
+	
+	const <mark>newReview</mark> = <mark>new</mark> mongoose.model('review', {
+		text    : 'very good',
+		value   : 10,
+	});
+	
+	newReview.save(console.log);</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center">
+			<div class="stacked-center ft-fragment stackCover">
+				<h3>Collection Element Life Cycle</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	mongoose.model('review').findOne({
+
+		text    : 'very good',
+		value   : 10
+		
+	}, (err, it) => {
+		if (err) return;
+		console.log( util.inspect(it) );
+	});</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Schema Usage Basics</h3>
+				<center>
+					<table>
+						<tr>
+							<td>
+								<pre data-src="data/basic.js" class="language-javascript pad80">
+								<code class="language-javascript"></code></pre>
+							</td>
+							<td>
+								<pre data-src="data/basic_m.js" class="language-javascript pad80">
+							<code class="language-javascript"></code></pre>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center" style="padding: 0px">
+			<div class="stacked-center oh">
+				<asciinema-player src="cast/review_schema.cast" cols="138" rows="28" font-size="big" speed="3"></asciinema-player>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center oh">
+				<h3>Schema Usage Basics: Types</h3>
+				<p style="padding-left: 50px">Following are all valid
+					<a href="http://mongoosejs.com/docs/schematypes.html">Storage Data Types</a>.
+					<ol>
+						<li>String &mdash; from JavaScript itself</li>
+						<li>Number &mdash; from JavaScript itself</li>
+						<li>Date &mdash; from JavaScript itself</li>
+						<li>Boolean &mdash; from JavaScript itself</li>
+						<li>Mixed &mdash; JSON Object type</li>
+						<li>Array of any other types</li>
+						<li>Buffer &mdash; converted to instances of mongodb.Binary</li>
+						<li>ObjectId &mdash; special type, identity number, GUID</li>
+					</ol>
+				</p>
+				<p style="padding-left: 50px">let's see how it looks in repl</p>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center oh">
+				<asciinema-player src="cast/schema_types2.cast" cols="138" rows="45" font-size="medium" speed="2"></asciinema-player>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center oh">
+				<asciinema-player src="cast/schema_equals2.cast" cols="138" rows="28" font-size="big" speed="5"></asciinema-player>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover2">
+				<h3>Schema Usage Basics: Prototype</h3>
+				<p>
+					For sure first of all we need to read the docs. But this can be boring.
+					<br> So let's try to imagine how that stuff can be done, and figure out with everything.
+					<br>First of all, we need Schema Prototype:
+					<br>
+					<pre class="language-javascript">
+							<code class="language-javascript pad80">
+			Object.keys(e.mongoose.Schema.prototype)
+	[
+  'constructor', 'instanceOfSchema', 'childSchemas', 'clone', 'defaultOptions', 'add', 'path', 'eachPath', 'requiredPaths',
+  'indexedPaths', 'pathType', 'hasMixedParent', 'setupTimestamp', 'queue', 'pre', 'post', 'plugin', 'method', 'static', 'index',
+  'set', 'get', 'indexes', 'virtual', '_getVirtual', 'virtualpath', 'remove', 'loadClass', '_getSchema', '_getPathType'
+	]
+							</code>
+							</pre>
+				</p>
+				<h4>And, yes, you will nof find much of tis in docs...</h4>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover2">
+				<h3>Schema Usage Basics: Model Prototype</h3>
+				<h4>Great! Awesome! Much more stuff to learn!</h4>
+				<pre class="language-javascript">
+								<code class="language-javascript pad80">
+				Object.keys(e.mongoose.Model)
+				[
+	 'discriminator', '_events', '_eventsCount', '_maxListeners', 'setMaxListeners', 'getMaxListeners', 'emit', 'addListener',
+	'on', 'once', 'prependListener', 'prependOnceListener', 'removeListener', 'removeAllListeners', 'listeners', 'rawListeners',
+' listenerCount', 'init', 'eventNames', 'ensureIndexes', 'createIndexes', 'translateAliases', 'remove', 'deleteOne', 'deleteMany',
+'find', 'findById', 'findOne', 'count', 'distinct', 'where', '$where', 'findOneAndUpdate', 'findByIdAndUpdate', 'findOneAndRemove',
+'create', 'watch', 'findByIdAndRemove', 'insertMany', '$__insertMany', 'bulkWrite', 'hydrate', 'update', 'updateMany', 'updateOne',
+		'replaceOne', 'mapReduce', 'aggregate', 'geoSearch', 'populate', 'compile', '__subclass', '$wrapCallback' 
+				]
+								  </code>
+							</pre>
+				<p>Holy Heaven! But notice, in learnign 80% this docs will help.
+					<br> And, yes, naming is always perfect, you can always guess.</p>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1>Understanding: pros & cons
+					<br>
+					<br> </h1>
+				<h2 class="ft-fragment">Working for uKit I never ever met developer, who got stuck in that mess</h2>
+				<h2 class="ft-fragment">but a lot of people unable to clarify data structure</h2>
+				<h2 class="ft-fragment">...or "validation"</h2>
+				<h2 class="ft-fragment">...or "naming"</h2>
+				<h1 class="ft-fragment">... Just KISS, for staying alive ...</h1>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1>Schema Usage Basics: Model Core</h1>
+				<ul class="start">
+					<li style="line-height: 4rem">
+						<b class="spit">.methods {}</b> &mdash; each part of this object becomes part of our collection element.
+						<br>These are JS properties and metods of document, wrapping our BSON 2 JSON data.
+					</li>
+					<li style="line-height: 4rem">
+						<b class="spit">.statics {}</b> &mdash; each part of this object becomes our model part: controller</li>
+					<li>
+						<b class="spit">.pre, .post</b> &mdash; hooks, nest our code</li>
+				</ul>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1>Schema Usage Basics: Model Core</h1>
+				<center style="margin-top: 3rem">
+					<div data-svg="stat_meth" style="width:1700px"></div>
+				</center>
+				<h3 class="ft-fragment">... and other ...
+					<span class="ft-fragment"> from mongoose.js docs and code ...</span>
+				</h3>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page black_on_white">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h3 style="color:black">So Let's face we need Domain Fine-State Machine</h3>
+				<div style="width:1700px" data-svg="domain_statuses_start"></div>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover2">
+				<div style="width:1700px" data-svg="domain_statuses_start_real"></div>
+			</div>
+		</div>
+	</div>
+</div>

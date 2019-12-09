@@ -1,0 +1,711 @@
+<div class="ft-section">
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 3rem 0 3rem 0">Challenge II:
+					<br>
+					<br>Discriminator Namespace</h1>
+			</div>
+		</div>
+		<div class="ft-fragment stack-center">
+			<div class="stacked-center stackCover black_on_white">
+				<h1 style="font-size: 5rem; padding: 9rem 0 3rem 0">
+					Discriminator :
+					<br><br>
+					Single Table Inheritance
+				</h1>
+				<h1>one collection to many classes</h1>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h2>Discriminator Definition Example</h2>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font20">
+const model = mongoose.model('ModelName', ModelSchema);
+
+const FirstDiscriminatorSchema  = new Schema({ /*...*/ });
+const SecondDiscriminatorSchema = new Schema({ /*...*/ });
+
+model.discriminator('One', <mark>First</mark>DiscriminatorSchema);
+model.discriminator('Two', <mark>Second</mark>DiscriminatorSchema);
+
+// <mark>One</mark> & <mark>Two</mark> comes mongoose.models[<mark>names</mark>]!
+						</code>
+					</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Basic Syntax</h3>
+				<pre class="language-javascript pad100">
+							<code class="language-javascript font20">
+	const services = [
+		'red', 'green', 'blue'
+	];
+	
+	const Review = new mongoose.Schema({
+		service : {
+			type : String,
+			enum : services
+		}
+							</code>
+						</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Basic Syntax</h3>
+				<pre class="language-javascript pad100">
+							<code class="language-javascript font20">
+	const <mark>services</mark> = [
+		'red', 'green', 'blue'
+	];
+	
+	const Review = new mongoose.Schema({
+		service : {
+			type : String,
+			enum : <mark>services</mark>
+		}
+							</code>
+						</pre>
+			</div>
+		</div>
+
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Basic Syntax</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	const Review = new mongoose.Schema({
+		service : // ...
+		// other schema props
+	}, {
+		// discriminator casting
+		// runs from this property !
+		
+		<mark>discriminatorKey</mark> : 'service' // <mark>!!!</mark>
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Basic Syntax</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	const Review = new mongoose.Schema({
+		<mark>service</mark> : // ...
+		// other schema props
+	}, {
+		// discriminator casting
+		// runs from this property !
+		
+		<mark>discriminatorKey</mark> : '<mark>service</mark>' // <mark>!!!</mark>
+	});
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Basic Syntax</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	
+	// default discriminatorKey
+	// is tied to property
+	// named as <mark> __t </mark>
+	
+	util.inspect(
+		schema.
+			<mark> discriminatorMapping </mark>
+	);
+					</code>
+				</pre>
+				<pre class="language-javascript pad40 ft-fragment" style="position: absolute; left: 1050px; top: 250px">
+					<code class="language-javascript font20">
+	// will output
+	{
+		key    : '__t',
+		value  : null,
+		isRoot : true
+	};
+	
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Basic Syntax</h3>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font20">
+	const <mark>services</mark> = [
+		'red', 'green', 'blue'
+	];
+	
+	model.discriminator(
+		// IMPORTANT Discriminator Model Name !!!
+		// must pass the following check
+		<mark>services</mark>.indexOf(type) > -1 
+	, { /* discriminator schema */ })
+						</code>
+					</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Basic Syntax</h3>
+				<center>
+					<table>
+						<tr>
+							<td class="w50">
+								<pre data-src="data/d_b_1.js" class="language-javascript pad80 font14">
+										<code class="language-javascript"></code></pre>
+							</td>
+							<td class="w50">
+								<pre data-src="data/d_b_2.js" class="language-javascript pad80 font14">
+										<code class="language-javascript"></code></pre>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Usage: ShortCuts</h3>
+				<pre class="language-javascript pad80">
+						<code class="language-javascript font14">
+const DISCRIMINATOR_MODEL_NAME = 'DiscriminatorModelName';
+
+// creation process
+// here we have our discriminator model
+let discriminatorModel = BaseModel.discriminator(DISCRIMINATOR_MODEL_NAME);
+
+// the same pointer to model, I use this
+let discriminatorModel = BaseModel.discriminator[DISCRIMINATOR_MODEL_NAME];
+
+// the same pointer to model
+let discriminatorModel = mogoose.models[DISCRIMINATOR_MODEL_NAME];
+
+// the same pointer to model
+let discriminatorModel = mongoose.model(DISCRIMINATOR_MODEL_NAME);
+							</code>
+						</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Usage: ShortCuts</h3>
+				<pre class="language-javascript pad80">
+						<code class="language-javascript font14">
+const DISCRIMINATOR_MODEL_NAME = 'DiscriminatorModelName';
+
+// creation process
+// here we have our discriminator model
+let discriminatorModel = BaseModel.discriminator <mark>(</mark> DISCRIMINATOR_MODEL_NAME <mark>)</mark>;
+
+// the same pointer to model, I use this
+let discriminatorModel = BaseModel.discriminator <mark>[</mark> DISCRIMINATOR_MODEL_NAME <mark>]</mark>;
+
+// the same pointer to model
+let discriminatorModel = mogoose.models <mark>[</mark> DISCRIMINATOR_MODEL_NAME <mark>]</mark>;
+
+// the same pointer to model
+let discriminatorModel = mongoose.model <mark>(</mark> DISCRIMINATOR_MODEL_NAME <mark>)</mark>;
+							</code>
+						</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Usage: ShortCuts</h3>
+				<pre class="language-javascript pad80">
+						<code class="language-javascript font14">
+const <mark>DISCRIMINATOR_MODEL_NAME</mark> = 'DiscriminatorModelName';
+
+// creation process
+// here we have our discriminator model
+let discriminatorModel = BaseModel.discriminator(<mark>DISCRIMINATOR_MODEL_NAME</mark>);
+
+// the same pointer to model, I use this
+let discriminatorModel = BaseModel.discriminator[<mark>DISCRIMINATOR_MODEL_NAME</mark>];
+
+// the same pointer to model
+let discriminatorModel = mogoose.models[<mark>DISCRIMINATOR_MODEL_NAME</mark>];
+
+// the same pointer to model
+let discriminatorModel = mongoose.model(<mark>DISCRIMINATOR_MODEL_NAME</mark>);
+							</code>
+						</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Usage: ShortCuts</h3>
+				<pre class="language-javascript pad80">
+						<code class="language-javascript font14">
+const DISCRIMINATOR_MODEL_NAME = 'DiscriminatorModelName';
+
+// creation process
+// here we have our discriminator model
+let <mark>discriminatorModel</mark> = BaseModel.discriminator(DISCRIMINATOR_MODEL_NAME);
+
+// the same pointer to model, I use this
+let <mark>discriminatorModel</mark> = BaseModel.discriminator[DISCRIMINATOR_MODEL_NAME];
+
+// the same pointer to model
+let <mark>discriminatorModel</mark> = mogoose.models[DISCRIMINATOR_MODEL_NAME];
+
+// the same pointer to model
+let <mark>discriminatorModel</mark> = mongoose.model(DISCRIMINATOR_MODEL_NAME);
+							</code>
+						</pre>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page black_on_white">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h3>Discriminators definition : When and How</h3>
+				<br>
+				<ul>
+					<li class="ft-fragment">Same API Interfaces for Many Foreign APIs</li>
+					<li class="ft-fragment">Ability to Realise Nested AOP Pattern</li>
+					<li class="ft-fragment">Same Data Structures for Different Props</li>
+					<li class="ft-fragment">Nesteds Data Structures with AOP</li>
+					<li class="ft-fragment">Divergent and Complex Code Conventions</li>
+					<li class="ft-fragment">Same API for Referenced Parent Models </li>
+					<li class="ft-fragment">... the same sort of etc ... </li>
+				</ul>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover2 black_on_white">
+				<h3 style="color:black">Domain Registration Fine-State Machine</h3>
+				<div style="width:1700px" data-svg="domain_statuses_end_real_frozen"></div>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover2 black_on_white">
+				<h3 style="color:black">Domain Registration Fine-State Machine</h3>
+				<div style="width:1700px" data-svg="domain_statuses_end_frozen"></div>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover2 black_on_white">
+				<div style="width:1700px" data-svg="domain_statuses_start_real"></div>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover2 black_on_white">
+				<div style="width:1700px" data-svg="domain_statuses_end_real"></div>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h3>AOP via discriminator</h3>
+				<p>Running code depends of which discriminator is now used !</p>
+				<table>
+					<tr>
+						<td class="w50">
+							<pre class="language-javascript pad80 font14">
+<code class="language-javascript"> // discriminator  ONE
+
+const schemaOne = new Schema({
+	// some props
+});
+
+schemaOne.methods.sameNameMethod = 
+	function () {
+		// some code
+	};
+
+model.discriminator('one', schemaOne);
+								</code>
+							</pre>
+						</td>
+						<td class="w50">
+							<pre class="language-javascript pad80 font14">
+<code class="language-javascript"> // discriminator  TWO
+
+const schemaTwo = new Schema({
+	// some props
+});
+
+schemaTwo.methods.sameNameMethod = 
+	function () {
+		// ! some OTHER code !
+	};
+
+model.discriminator('two', schemaTwo);
+								</code>
+							</pre>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center">
+				<h3>AOP via discriminator</h3>
+				<p>Running code depends of which discriminator is now used !</p>
+				<table>
+					<tr>
+						<td class="w50">
+							<pre class="language-javascript pad80 font14">
+<code class="language-javascript"> // discriminator <mark> ONE </mark>
+
+const schema<mark>One</mark> = new Schema({
+	// some props
+});
+
+schema<mark>One</mark>.methods.sameNameMethod = 
+	function () {
+		// some code
+	};
+
+model.discriminator('one', schema<mark>One</mark>);
+								</code>
+							</pre>
+						</td>
+						<td class="w50">
+							<pre class="language-javascript pad80 font14">
+<code class="language-javascript"> // discriminator <mark> TWO </mark>
+
+const schema<mark>Two</mark> = new Schema({
+	// some props
+});
+
+schema<mark>Two</mark>.methods.sameNameMethod = 
+	function () {
+		// ! some OTHER code !
+	};
+
+model.discriminator('two', schema<mark>Two</mark>);
+								</code>
+							</pre>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and 
+	discriminatorModel
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth are tied to 
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// where
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const <mark>BaseModel</mark> = this.parent();
+
+	// and 
+	discriminatorModel
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth are tied to 
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// where
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// <mark>this</mark> points to new discriminatorModel()
+	// therefore it is model instance, and
+	const <mark>BaseModel</mark> = <mark>this</mark>.parent();
+
+	// and 
+	discriminatorModel
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth are tied to 
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// where
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// <mark>this</mark> points to new discriminatorModel()
+	// therefore it is model instance, and
+	const <mark>BaseModel</mark> = this.<mark>parent()</mark>;
+
+	// and 
+	discriminatorModel
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth are tied to 
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// where
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and 
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth are tied to 
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// where
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// where
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ <mark>discriminatorKey</mark>  ] : [ <mark>discriminatorValue</mark> ] }
+
+	// where
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// <mark>where</mark>
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// <mark>where</mark>
+	const <mark>discriminatorMapping</mark> = <mark>BaseModel</mark>.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// <mark>where</mark>
+	const <mark>discriminatorMapping</mark> = BaseModel.<mark>schema</mark>.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ discriminatorKey  ] : [ discriminatorValue ] }
+
+	// <mark>where</mark>
+	const <mark>discriminatorMapping</mark> = BaseModel.<mark>schema</mark>.<mark>discriminatorMapping</mark>,
+		  discriminatorKey     = discriminatorMapping.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ <mark>discriminatorKey</mark>  ] : [ discriminatorValue ] }
+
+	// <mark>where</mark>
+	const <mark>discriminatorMapping</mark> = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = <mark>discriminatorMapping</mark>.key,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ <mark>discriminatorKey</mark>  ] : [ discriminatorValue ] }
+
+	// <mark>where</mark>
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  <mark>discriminatorKey</mark>     = discriminatorMapping.<mark>key</mark>,
+		  discriminatorValue   = discriminatorMapping.value;
+	</code></pre>
+			</div>
+		</div>
+
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Discriminators Relations to Base Model</h3>
+				<pre class="language-javascript pad80 font16">
+<code class="language-javascript">	// this points to new discriminatorModel()
+	// therefore it is model instance, and
+	const BaseModel = this.parent();
+
+	// and <mark>any query for!</mark>
+	<mark>discriminatorModel</mark>
+		[ 'find' || 'findOne' || 'update' || 'stream' || 'cursor' ]()
+	// and so on and in deepth <mark>are tied to </mark>
+		{ [ discriminatorKey  ] : [ <mark>discriminatorValue</mark> ] }
+
+	// <mark>where</mark>
+	const discriminatorMapping = BaseModel.schema.discriminatorMapping,
+		  discriminatorKey     = discriminatorMapping.key,
+		  <mark>discriminatorValue</mark>   = discriminatorMapping.<mark>value</mark>;
+	</code></pre>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1>uKit.com discriminators</h1>
+				<div data-svg="ukit.com.dis" style="width:1700px"></div>
+			</div>
+		</div>
+	</div>
+
+</div>

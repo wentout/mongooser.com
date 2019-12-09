@@ -1,0 +1,68 @@
+<div class="ft-section">
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 3rem 0 3rem 0">Challenge V:
+					<br>
+					<br>Real Life</h1>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1>Transactions ?</h1>
+				<h3 class="ft-fragment">... virtual transaction cache ...</h3>
+				<br>
+				<h1 class="ft-fragment">Migration 3-4-5?</h1>
+				<h3 class="ft-fragment">... wrappers ...</h3>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h3>Real Life Examples: discriminator key value</h3>
+				<pre class="language-javascript pad80 font20">
+<code class="language-javascript">const BEFORE = baseModel.discriminator(
+				discriminatorName, discriminatorSchema );
+
+const AFTER = baseModel.discriminator(
+				discriminatorName, discriminatorSchema,
+	
+	<mark> discriminatorKEY_VALUE </mark>
+	
+);</code></pre>
+			</div>
+		</div>
+		
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center">
+				<pre class="language-javascript pad80 font14">
+<code class="language-javascript">	const MONGOOSE_PULL_6100 = (baseModel, discriminatorSchema, <mark>value</mark>) => {
+	const discriminatorModelName = `${baseModel.modelName || baseModel.name}.${value}`;
+	const dcr = baseModel.discriminator(discriminatorModelName, discriminatorSchema);
+	dcr.schema.discriminatorMapping.value = value;
+	const schema = baseModel.discriminators[value].schema;
+	const key = schema.options.discriminatorKey;
+	schema.remove(key).add({
+		[key] : {
+			default : value,
+			select  : true,
+			set     : function(newName) {
+				if (newName === value) return value;
+				throw new Error('Can\'t set discriminator key "' + key + '"');
+			},
+			$skipDiscriminatorCheck  : true,
+			[schema.options.typeKey] : String
+		}
+	});
+	return dcr;
+};</code></pre>
+			</div>
+			<img src="./img/6100.jpg" width="1320px" style="position: absolute; left: 250px; top: 260px">
+		</div>
+	</div>
+
+</div>

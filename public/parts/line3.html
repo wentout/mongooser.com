@@ -1,0 +1,329 @@
+<div class="ft-section">
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 3rem 0 3rem 0">Challenge I: Virtuals</h1>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover2">
+				<h2>Virtuals Usage:
+					<b style="color:red">.g</b>et</h2>
+				<ul class="start">
+					<li>Protected Behaviour: read only</li>
+					<li>"this" related calculations</li>
+					<li>& Hidden Re-Calcs on Change</li>
+					<li>IIFE scoped methods</li>
+					<li>Dependent Behaviour</li>
+					<li>.chainable.props.voids</li>
+					<li>... etc</li>
+				</ul>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover2">
+				<h2>Virtuals Usage:
+					<b style="color:red">.s</b>et</h2>
+				<ul class="start">
+					<li>Setting "this" doc Props</li>
+					<li>Protected Behaviour: only set</li>
+					<li>Another way of Abstraction</li>
+					<li>Clean Code Interfaces</li>
+					<li>Dependent Behaviour</li>
+					<li>Transactions</li>
+					<li>... etc</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page black_on_white">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h3 style="color:black">Virtuals Basic Example</h3>
+				<table>
+					<tr>
+						<td class="w50" valign="top">
+							<pre class="language-javascript pad80 font14 ft-fragment" data-src="data/v_basic.js">
+								<code class="language-javascript"></code></pre>
+						</td>
+						<td class="w50" valign="top" style="padding-top:25px">
+							<div data-svg="virt" style="width:700px"></div>
+							<p style="margin-top:10px" class="ft-fragment">use virtual helpers here
+								<br> for something special</p>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page black_on_white">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h3 style="color:black">Virtuals Usage Place: Real World</h3>
+				<div style="width:1700px" data-svg="virt_real"></div>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual & AOP: dependent property</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.get(function () {
+		
+			// dependent behaviour
+			if (this.someProp) {
+				return this.other_value;
+			}
+			// ...
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual & AOP: dependent property</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.get(function () {
+		
+			// <mark>dependent behaviour</mark>
+			<mark>if</mark> (this.someProp) {
+				return this.other_value;
+			}
+			// ...
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual & AOP: Method</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.get(function () {
+			
+			// yes you can
+			return (...args) => {
+				// some code
+			};
+			
+					</code>
+				</pre>
+				<img class="ft-fragment" src="./img/Yes-You-Can-Slide.jpg" width="500px" style="position: absolute; left: 1200px; top: 220px">
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual & AOP: Dependent Method</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.get(function () {
+			
+			if (this.someProp) {
+				return (...args) => // some code
+			} else {
+				return (...args) => // other code
+			}
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual & AOP: Dependent Method</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.get(function () {
+			
+			<mark><span style="color:black">if</span></mark> (this.someProp) {
+				return (...args) => // <mark>some code</mark>
+			} <mark><span style="color:black">else</span></mark> {
+				return (...args) => // <mark>other code</mark>
+			}
+					</code>
+				</pre>
+				<img class="ft-fragment" src="./img/Yes-You-Can-Slide.jpg" width="500px" style="position: absolute; left: 1200px; top: 220px">
+
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual AOP Method VS General Method</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	// General AOP Producer Method usage
+	const AOPmethod = docInstance.AOP_Example( /* 1 */ );
+	// one+ step call
+	AOPmethod( /* 2 */ );
+	
+	// Virtual AOP Producer Method usage
+	// immidiate call
+	docInstance.AOP_Example();
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual AOP Method VS General Method</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	// General AOP Producer Method usage
+	const AOPmethod = docInstance.AOP_Example<mark>( /* 1 */ )</mark>;
+	// <mark>one+ step call</mark>
+	AOPmethod<mark>( /* 2 */ )</mark>;
+	
+	// Virtual AOP Producer Method usage
+	// <mark>immidiate call</mark>
+	docInstance.AOP_Example<mark>( /* 1 */ )</mark>;
+					</code>
+				</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual & AOP: Dependent Set</h2>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.<mark>set</mark>(function () {
+			
+			if (this.someProp) {
+				this.storage = value*this.someProp;
+			} else {
+				this.storage = value;
+			}
+						</code>
+					</pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<br>
+				<h2>Virtual & AOP: Dependent Set</h2>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.<mark>set</mark>(function () {
+			
+			<mark>if</mark> (this.someProp) {
+				this.storage = value*this.someProp;
+			} <mark>else</mark> {
+				this.storage = value;
+			}
+						</code>
+					</pre>
+				<img class="ft-fragment" src="./img/Yes-You-Can-Slide.jpg" width="500px" style="position: absolute; left: 1200px; top: 220px">
+
+			</div>
+		</div>
+		<!-- <div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Virtual & AOP</h3>
+				<center>
+					<table>
+						<tr>
+							<td class="w50">
+								<pre class="language-javascript pad80 font12" data-src="data/v_aop2.js">
+										<code class="language-javascript"></code></pre>
+							</td>
+							<td class="w50">
+								<pre class="language-javascript pad80 font12" data-src="data/v_aop1.js">
+										<code class="language-javascript"></code></pre>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div> -->
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Virtual IFs balderdash mess</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.<mark>get</mark>(function () {
+			
+		if (this.someProp) // ... code
+		if (this.otherProp) // ... other code 1
+		if (this.someProp &&
+				this.otherProp) // ... other code 2
+		if (externalProperty) // ... other code 3
+		// default behaviour
+					</code>
+				</pre>
+
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Virtual IFs balderdash mess</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	Schema.virtual('AOP_Example')
+		.<mark>get</mark>(function () {
+			
+		<mark>if</mark> (this.someProp) // ... code
+		<mark>if</mark> (this.otherProp) // ... other code 1
+		<mark>if</mark> (this.someProp &&
+				this.otherProp) // ... other code 2
+		<mark>if</mark> (externalProperty) // ... other code 3
+		// default behaviour
+					</code>
+				</pre>
+				<img class="ft-fragment" src="./img/yes-you-can.jpg" width="500px" style="position: absolute; left: 1250px; top: 160px">
+
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Virtual IFs balderdash mess</h3>
+				<table>
+					<tr>
+						<td class="w50">
+							<pre class="language-javascript pad80 font12" data-src="data/v_mess1.js">
+										<code class="language-javascript"></code></pre>
+						</td>
+						<td class="w50" valign="top">
+							<pre class="language-javascript pad80 font12" data-src="data/v_mess2.js">
+										<code class="language-javascript"></code></pre>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center black_on_white">
+			<div class="stacked-center">
+				<div data-svg="virt_real_frozen" style="width:1700px"></div>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment black_on_white">
+			<div class="stacked-center stackCover2 black_on_white" style="padding: 0px">
+				<h4>Solution for Condition Operators aims</h4>
+				<!-- <p>If You SEE a lot of Contition Operators, you probably need Namespace</p> -->
+				<div style="width:1700px" data-svg="virt_times"></div>
+			</div>
+		</div>
+	</div>
+</div>

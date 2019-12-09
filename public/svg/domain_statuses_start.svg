@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/PR-SVG-20010719/DTD/svg10.dtd">
+<svg width="100%" height="100%" viewBox="430 256 848 413" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g>
+    <rect style="fill: #ffffff" x="431.756" y="257.134" width="845.225" height="410.056" />
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="431.756" y="257.134" width="845.225" height="410.056"
+      />
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="664.926" y="316.486" width="601.702" height="340.651" />
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="664.926" y="316.486" width="601.702" height="340.651"
+    />
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+      x="965.777" y="347.661">
+      <tspan x="965.777" y="347.661">Domain Registration Statuses</tspan>
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="701.41" y="370.706" width="140.437" height="61.6024" />
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="701.41" y="370.706" width="140.437"
+      height="61.6024" />
+    <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+      x="771.628" y="403.096">
+      <tspan x="771.628" y="403.096">search</tspan>
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="877.874" y="370.684" width="161.25" height="61.3246" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="877.874" y="370.684" width="161.25" height="61.3246"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="958.499" y="402.935">
+        <tspan x="958.499" y="402.935">selected</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="841.846" y1="401.506" x2="865.638" y2="401.4"
+      />
+      <polygon style="fill: #ffffff" points="865.66,406.4 875.638,401.356 865.616,396.4 " />
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="865.66,406.4 875.638,401.356 865.616,396.4 "
+      />
+    </g>
+  </g>
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="1066.27" y="370.95" width="174.466" height="61.0588" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1066.27" y="370.95" width="174.466" height="61.0588"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="1153.5" y="403.068">
+        <tspan x="1153.5" y="403.068">paid</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1039.12" y1="401.346" x2="1054.03" y2="401.42"
+      />
+      <polygon style="fill: #ffffff" points="1054.01,406.42 1064.03,401.469 1054.05,396.42 " />
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1054.01,406.42 1064.03,401.469 1054.05,396.42 "
+      />
+    </g>
+  </g>
+  <g class="ft-fragment">
+    <rect style="fill: #ffffff" x="676.388" y="451.218" width="581.579" height="115.592" />
+    <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="676.388" y="451.218" width="581.579" height="115.592"
+    />
+    <text font-size="12.8" style="fill: #000000;text-anchor:middle;font-family:sans-serif;font-style:normal;font-weight:normal"
+      x="967.177" y="514.714">
+    </text>
+  </g>
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="1065.52" y="494.184" width="175.889" height="58.9981" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="1065.52" y="494.184" width="175.889" height="58.9981"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="1153.47" y="525.272">
+        <tspan x="1153.47" y="525.272">registering</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1153.5" y1="432.008" x2="1153.47" y2="481.948"
+      />
+      <polygon style="fill: #ffffff" points="1148.47,481.946 1153.47,491.948 1158.47,481.95 " />
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1148.47,481.946 1153.47,491.948 1158.47,481.95 "
+      />
+    </g>
+  </g>
+  <g class="ft-fragment">
+      <g>
+        <rect style="fill: #ffffff" x="1066.27" y="583.252" width="174.252" height="61.6024" />
+        <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="1066.27" y="583.252" width="174.252"
+          height="61.6024" />
+        <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+          x="1153.39" y="615.642">
+          <tspan x="1153.39" y="615.642">reg error</tspan>
+        </text>
+      </g>
+      <g>
+        <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1153.47" y1="553.182" x2="1153.42" y2="571.016"
+        />
+        <polygon style="fill: #ffffff" points="1148.42,571.003 1153.4,581.016 1158.42,571.029 " />
+        <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1148.42,571.003 1153.4,581.016 1158.42,571.029 "
+        />
+      </g>
+    </g>
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="877.734" y="493.876" width="162.685" height="59.5798" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="877.734" y="493.876" width="162.685" height="59.5798"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="959.076" y="525.255">
+        <tspan x="959.076" y="525.255">registered</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="1065.52" y1="523.684" x2="1052.66" y2="523.675"
+      />
+      <polygon style="fill: #ffffff" points="1052.66,518.675 1042.66,523.668 1052.65,528.675 " />
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="1052.66,518.675 1042.66,523.668 1052.65,528.675 "
+      />
+    </g>
+  </g>
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="701.542" y="494.02" width="140.841" height="59.5798" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="701.542" y="494.02" width="140.841" height="59.5798"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="771.962" y="525.399">
+        <tspan x="771.962" y="525.399">renew</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="877.734" y1="523.666" x2="854.618" y2="523.76"
+      />
+      <polygon style="fill: #ffffff" points="854.598,518.76 844.618,523.801 854.638,528.76 " />
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="854.598,518.76 844.618,523.801 854.638,528.76 "
+      />
+    </g>
+  </g>
+  <g class="ft-fragment">
+    <polyline style="fill: none; fill-opacity:0; stroke-width: 2; stroke: red" points="771.962,494.02 771.962,473.02 1153.47,473.02 1153.47,481.948 "
+    />
+    <polygon style="fill: red" points="1148.47,481.948 1153.47,491.948 1158.47,481.948 " />
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: red" points="1148.47,481.948 1153.47,491.948 1158.47,481.948 "
+    />
+  </g>
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="877.348" y="586.268" width="163.295" height="59.5798" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="877.348" y="586.268" width="163.295" height="59.5798"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="958.996" y="617.647">
+        <tspan x="958.996" y="617.647">expired</tspan>
+      </text>
+      <g>
+        <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="959.076" y1="553.456" x2="959.026" y2="574.032"
+        />
+        <polygon style="fill: #ffffff" points="954.026,574.02 959.001,584.032 964.026,574.044 " />
+        <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="954.026,574.02 959.001,584.032 964.026,574.044 "
+        />
+      </g>
+    </g>
+  </g>
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="701.542" y="586.268" width="141.107" height="59.5798" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="701.542" y="586.268" width="141.107" height="59.5798"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="772.095" y="617.647">
+        <tspan x="772.095" y="617.647">free</tspan>
+      </text>
+    </g>
+    <g>
+      <line style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x1="877.348" y1="616.058" x2="854.884" y2="616.058"
+      />
+      <polygon style="fill: #ffffff" points="854.884,611.058 844.884,616.058 854.884,621.058 " />
+      <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="854.884,611.058 844.884,616.058 854.884,621.058 "
+      />
+    </g>
+  </g>
+
+
+
+  <g class="ft-fragment">
+    <g>
+      <rect style="fill: #ffffff" x="443.144" y="316.366" width="211.7" height="341.03" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" x="443.144" y="316.366" width="211.7" height="341.03"
+      />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="548.994" y="347.359">
+        <tspan x="548.994" y="347.359">Foreigns</tspan>
+      </text>
+    </g>
+    <g class="ft-fragment">
+      <rect style="fill: #ffffff" x="486.144" y="381.228" width="116.236" height="61.6024" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="486.144" y="381.228" width="116.236"
+        height="61.6024" />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="544.262" y="413.618">
+        <tspan x="544.262" y="413.618">API 1</tspan>
+      </text>
+    </g>
+    <g class="ft-fragment">
+      <rect style="fill: #ffffff" x="486.85" y="460.422" width="116.236" height="61.6024" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="486.85" y="460.422" width="116.236"
+        height="61.6024" />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="544.968" y="492.812">
+        <tspan x="544.968" y="492.812">API 2</tspan>
+      </text>
+    </g>
+    <g class="ft-fragment">
+      <rect style="fill: #ffffff" x="488.264" y="579.922" width="116.236" height="61.6024" />
+      <rect style="fill: none; fill-opacity:0; stroke-width: 2; stroke-dasharray: 4; stroke: #000000" x="488.264" y="579.922" width="116.236"
+        height="61.6024" />
+      <text font-size="22.5778" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+        x="546.382" y="612.312">
+        <tspan x="546.382" y="612.312">API N</tspan>
+      </text>
+    </g>
+  </g>
+  <g class="ft-fragment">
+  <g>
+    <polygon style="fill: #ffffff" points="674.924,386.768 644.285,386.768 644.285,379.108 628.966,394.427 644.285,409.747 644.285,402.087 674.924,402.087 674.924,409.747 690.243,394.427 674.924,379.108 "
+    />
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="674.924,386.768 644.285,386.768 644.285,379.108 628.966,394.427 644.285,409.747 644.285,402.087 674.924,402.087 674.924,409.747 690.243,394.427 674.924,379.108 "
+    />
+    <polygon style="fill: none; fill-opacity:0; stroke-width: 2; stroke: #000000" points="674.924,386.768 644.285,386.768 644.285,379.108 628.966,394.427 644.285,409.747 644.285,402.087 674.924,402.087 674.924,409.747 690.243,394.427 674.924,379.108 "
+    />
+  </g>
+    <text font-size="28.2222" style="fill: #000000;text-anchor:middle;font-family:'Source Code Pro';font-style:normal;font-weight:normal"
+      x="854.368" y="287.734">
+      <tspan x="854.368" y="287.734">And Code Interfaces for all Foreign APIs</tspan>
+    </text>
+  </g>
+</svg>

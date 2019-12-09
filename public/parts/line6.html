@@ -1,0 +1,892 @@
+<div class="ft-section">
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 3rem 0 3rem 0">Challenge IV:
+					<br>
+					<br>Errors</h1>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	
+		const MySchema = new mongoose.Schema({
+			array : {
+				type : [ String ],
+				enum : [ ... "qwertys" ... ]
+			},
+		});
+		
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+
+		const MySchema = new mongoose.Schema({
+			array : {
+				type : <mark>[</mark> String <mark>]</mark>,
+				enum : [ ... "qwertys" ... ]
+			},
+		});
+		
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+
+		const MySchema = new mongoose.Schema({
+			array : <mark>[</mark> {
+				type : String,
+				enum : [ ... "qwertys" ... ]
+			} <mark>]</mark>,
+		});
+		
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+
+		someProp : {
+			type : {
+				exampleStringProp : String,
+				exampleNumberProp : Number 
+				default : ...
+			},
+		}
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+
+		someProp : {
+			type : {
+				exampleStringProp : String,
+				exampleNumberProp : Number 
+			},
+			<mark>default</mark> : ...
+		}
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+
+		someProp : {
+			<mark>type</mark> : {
+				exampleStringProp : String,
+				exampleNumberProp : Number 
+			},
+			default : ...
+		}
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+
+		<mark>someProp</mark> : {
+			type : {
+				<mark>exampleStringProp</mark> : String,
+				<mark>exampleNumberProp</mark> : Number 
+			},
+			default : ...
+		}
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20"><mark>someProp</mark> : {
+			//  please set on top level !
+			exampleStringProp : {
+				type    : String,
+				default : ...
+			},
+			exampleNumberProp : {
+				type    : Number
+			}
+		}</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20"><mark>someProp</mark> : {
+			//  please set on top level !
+			<mark>exampleStringProp</mark> : {
+				type    : String,
+				default : ...
+			},
+			<mark>exampleNumberProp</mark> : {
+				type    : Number
+			}
+		}</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20"><mark>someProp</mark> : {
+			//  <mark>please set on top level !</mark>
+			<mark>exampleStringProp</mark> : {
+				type    : String,
+				default : ...
+			},
+			<mark>exampleNumberProp</mark> : {
+				type    : Number
+			}
+		}</code></pre>
+			</div>
+		</div>
+
+		<!-- <div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h2> Errors 4 Beginners: type keyword</h2>
+				<center>
+					<table border="0px">
+						<tr>
+							<td width="50%">
+								<pre class="language-javascript pad80">
+<code class="language-javascript font12">const MySchema = new mongoose.Schema({
+	array : {
+		type : [String],
+		enum : [ ... "qwertys" ... ]
+	},
+}); </code></pre>
+							</td>
+							<td>
+								<pre class="language-javascript pad80">
+<code class="language-javascript font12">const MySchema = new mongoose.Schema({
+	array : <mark>[</mark> {
+		type : String,
+		enum : [ ... "qwertys" ... ]
+	} <mark>]</mark>,
+}); </code></pre>
+							</td>
+						</tr>
+						<tr>
+							<td width="50%">
+								<pre class="language-javascript pad80">
+<code class="language-javascript font12">
+someProp : {
+	type : {
+		exampleStringProp : String,
+		exampleNumberProp : Number 
+		default : ...
+	},
+}
+
+</code></pre>
+							</td>
+							<td>
+								<pre class="language-javascript pad80">
+<code class="language-javascript font12">someProp : {
+	exampleStringProp : { // <mark>top level</mark>
+		type    : String,
+		<mark>default</mark> : ...
+	},
+	exampleNumberProp : {
+		type    : Number
+	}
+} ...
+</code></pre>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div> -->
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+		<code class="language-javascript font20">	mySchema.methods.toString = () => {
+			// please don't do it
+		};
+
+		mySchema.methods.toObject = () => {
+			// please don't do it
+		};
+		
+		mySchema.methods.toJSON = () => {
+			// please don't do it
+		};
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+		<code class="language-javascript font20">	mySchema.methods.toString = () => {
+			// <mark> please don't do it </mark>
+		};
+
+		mySchema.methods.toObject = () => {
+			// <mark> please don't do it </mark>
+		};
+		
+		mySchema.methods.toJSON = () => {
+			// <mark> please don't do it </mark>
+		};
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+		<code class="language-javascript font20">	mySchema.methods.<mark>_</mark>toString = () => {
+			// <mark> please do something like this </mark>
+		};
+
+		mySchema.methods.<mark>_</mark>toObject = () => {
+			// <mark> please do something like this </mark>
+		};
+		
+		mySchema.methods.<mark>_</mark>toJSON = () => {
+			// <mark> please do something like this </mark>
+		};
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// NO! toString can be re-defined
+
+		const strCheckingId = 'some_id_string';
+		
+		if (myEl._id.toString() === strCheckingId) {
+			// some code
+		}
+		
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// <mark>NO! toString can be re-defined</mark>
+
+		const strCheckingId = 'some_id_string';
+		
+		if (myEl._id.<mark>toString()</mark> === strCheckingId) {
+			// some code
+		}
+		
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// NO! toJSON can be re-defined
+
+		const strCheckingId = 'some_id_string';
+		
+		if (myEl._id.toJSON() === strCheckingId) {
+			// some code
+		}
+		
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// <mark>NO! toJSON can be re-defined</mark>
+
+		const strCheckingId = 'some_id_string';
+		
+		if (myEl._id.<mark>toJSON()</mark> === strCheckingId) {
+			// some code
+		}
+		
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toString .toObjet .toJSON</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// <mark>Equals</mark> way to do This Check
+
+		const strCheckingId = 'some_id_string';
+		
+		if (myEl._id<mark>.equals </mark>( strCheckingId ) ) {
+			// some code
+		}
+		
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .markModified</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+	const myModel = new mongoose.model('MyModel', {
+		array : [{ str : String}]
+	});
+	const el = new myModel({});
+	el.array.push({ name : 'someData' });
+	
+	// <mark> WRONG immediate save </mark>
+	el.save(console.log);
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .markModified</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+	el.array.push({ name : 'someData' });
+	
+	// need this for notify mongoose
+	// about nested modifications
+	el.<mark> markModified </mark>('array');
+	
+	el.save(console.log);
+						
+				</code></pre>
+			</div>
+		</div>
+
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .markModified</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	const myModel = new mongoose.model('MyModel', {
+		mixed : mongoose.SchemaTypes.Mixed
+	});
+	const el = new myModel({});
+	el.mixed = { some : 'prop' };
+	
+	// <mark> WRONG immediate save</mark>
+	el.save(console.log);
+					</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .markModified</h3>
+				<pre class="language-javascript pad100">
+					<code class="language-javascript font20">
+	el.mixed = { some : 'prop' };
+	
+	// need this for notify mongoose
+	// about nested modifications
+	
+	el.<mark> markModified </mark>('mixed');
+	
+	el.save(console.log);
+				</code></pre>
+			</div>
+		</div>
+		<!-- <div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors: .toObjet, .toJSON & .markModified</h3>
+				<center>
+					<table>
+						<tr valign="top">
+							<td width="50%">
+								<pre class="language-javascript pad40">
+<code class="language-javascript font12">const myEl = new model.('elems', { props });
+const strCheckingId = 'some_id_string';
+if (myEl._id.<mark> toString </mark>() === strCheckingId) {
+	// <mark> BAD </mark> code
+}
+</code></pre>
+							</td>
+							<td>
+								<pre class="language-javascript pad40">
+<code class="language-javascript font12">const myEl_1 = new model.('elems', { props });
+const strCheckingId = 'some_id_string';
+if (myEl_1._id.<mark> equals </mark>(strCheckingId)) {
+	// <mark> Correct ! </mark> code
+}
+</code></pre>
+							</td>
+						</tr>
+						<tr valign="top">
+							<td>
+								<pre class="language-javascript pad40">
+<code class="language-javascript font12">const myModel = new mongoose.model('MyModel', {
+	array : [{ str : String}]
+});
+const el = new myModel({});
+el.array.push({ name : 'someData' });
+
+// need this for notify mongoose
+// about nested modifications
+el.<mark> markModified </mark>('array');
+
+el.save(console.log);
+</code></pre>
+							</td>
+							<td>
+								<pre class="language-javascript pad40">
+<code class="language-javascript font12">const myModel = new mongoose.model('MyModel', {
+	mixed : mongoose.SchemaTypes.Mixed
+});
+const el = new myModel({});
+el.mixed = { some : 'prop' };
+
+// need this for notify mongoose
+// about nested modifications
+el.<mark> markModified </mark>('mixed');
+
+el.save(console.log);
+</code></pre>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div> -->
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+<code class="language-javascript font20">		const MySchema = new mongoose.Schema({
+			array : [ {
+				nestedPropOne : {
+					type : String,
+				},
+				nestedPropTwo : {
+					...
+				},
+				...
+			} ],
+		});
+			</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+<code class="language-javascript font20">		const MySchema = new mongoose.Schema({
+			array : [ <mark>{</mark> // wrong !
+				nestedPropOne : {
+					type : String,
+				},
+				nestedPropTwo : {
+					...
+				},
+				...
+			<mark>}</mark> ],
+		});
+			</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// cause of <mark>Broken Validation</mark>
+		
+		// Cannot read property
+		// 'nestedPropOne' of undefined
+		
+		MySchema.path('array.nestedPropOne')
+			.validate(val => {...})
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// cause of <mark>Broken Validation</mark>
+		
+		// <mark>Cannot read property</mark>
+		// 'nestedPropOne' of undefined
+		
+		MySchema.path('array.nestedPropOne')
+			.validate(val => {...})
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		// cause of <mark>Broken Validation</mark>
+		
+		// Cannot read property
+		// <mark>'nestedPropOne' of undefined</mark>
+		
+		MySchema.path('array.nestedPropOne')
+			.validate(val => {...})
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		const subSchema = new mongoose.Schema({
+			nestedPropOne : {
+				type : String,
+			},
+			nestedPropTwo : {
+				...
+			},
+			...
+		});
+		
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		const <mark>subSchema</mark> = new mongoose.Schema({
+			nestedPropOne : {
+				type : String,
+			},
+			nestedPropTwo : {
+				...
+			},
+			...
+		});
+		
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		
+		const MySchema = <mark>new</mark> mongoose.Schema({
+			array : [ <mark>subSchema</mark> ],
+		});
+		
+		subSchema.path('nestedPropOne')
+			.validate(val => { /* works */ });
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+			
+		const MySchema = <mark>new</mark> mongoose.Schema({
+			array : [ <mark>subSchema</mark> ],
+		});
+		
+		<mark>subSchema</mark>.path('nestedPropOne')
+			.validate(val => { /* works */ });
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+					
+		const MySchema = new mongoose.Schema({
+			array : [ subSchema ],
+		});
+		
+		subSchema.<mark>path</mark>('nestedPropOne')
+			.validate(val => { /* works */ });
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+					
+		const MySchema = new mongoose.Schema({
+			array : [ subSchema ],
+		});
+		
+		subSchema.<mark>path</mark>('<mark>nestedPropOne</mark>')
+			.validate(val => { /* works */ });
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas</h3>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+					
+		const MySchema = new mongoose.Schema({
+			array : [ subSchema ],
+		});
+		
+		subSchema.<mark>path</mark>('<mark>nestedPropOne</mark>')
+			.<mark>validate</mark>(val => { /* works */ });
+			
+			
+			
+				</code></pre>
+			</div>
+		</div>
+		<!-- <div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h3>Errors : Nested Schemas
+					<br> </h3>
+				<center>
+					<table width="100%">
+						<tr valign="top">
+							<td class="w50">
+								<h4>[{ nested }] & validation ?
+									<br> </h4>
+								<pre class="language-javascript pad80" data-src="/data/nested_error.js">
+						<code class="language-javascript"></code></pre>
+							</td>
+							<td class="w50">
+								<h4>Good Way
+									<br> </h4>
+								<pre class="language-javascript pad80" data-src="data/nested_works.js">
+						<code class="language-javascript"></code></pre>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</div>
+		</div> -->
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0">Troubles
+					<br>
+					<br>
+					<span class="ft-fragment">probably</span>
+				</h1>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0">Race Contitions</h1>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font25">
+	. [ 'find' || 'findOne' || ... ] ()
+						</code></pre>
+				<h2 class="ft-fragment">and then .save()</h2>
+				<h1 class="ft-fragment" style="font-size: 5rem; padding: 2rem 0 3rem 0; color: greenyellow">.update() is better</h1>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0"> { autoIndex : true } </h1>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		const MySchema = new mongoose.Schema({
+			propName : {
+				index : true
+			},
+		}, {
+			autoIndex : true // default
+		});
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0"> { autoIndex : true } </h1>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		const MySchema = new mongoose.Schema({
+			propName : {
+				index : true
+			},
+		}, {
+			autoIndex : true // <mark>default</mark>
+		});
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0">
+					{ autoIndex :
+					<span style="color:red">false</span> } </h1>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font25">
+	// Production Ready Way
+	{
+		autoIndex : <mark>config.autoIndex</mark> // false
+	}
+	
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0">
+					{ minimize : true } </h1>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		const MySchema = new mongoose.Schema({
+			propName : {
+				default : null
+			},
+		}, {
+			minimize : true // default
+		});
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0">
+					{ minimize : true } </h1>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font20">
+		const MySchema = new mongoose.Schema({
+			propName : {
+				default : null
+			},
+		}, {
+			minimize : true // <mark>default</mark>
+		});
+				</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0">
+					{ minimize :
+					<span style="color:red">false</span> } </h1>
+				<pre class="language-javascript pad100">
+				<code class="language-javascript font25">
+	
+	// Production Ready Way
+	{
+		minimize : <mark>config.minimize</mark> // false
+	}
+	
+				</code></pre>
+			</div>
+		</div>
+	</div>
+	<div class="ft-page">
+		<div class="stack-center">
+			<div class="stacked-center">
+				<h1 style="font-size: 5rem; padding: 2rem 0 3rem 0">Testing
+					<br>
+					<br>
+					<span class="ft-fragment">probably</span>
+				</h1>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1>Mockgoose</h1>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font25">
+if (process.env.NODE_ENV_MOCKGOOSE) {
+	var Mockgoose = require('mockgoose')
+								.Mockgoose;
+	var mockgoose = new Mockgoose(mongoose);
+	mockgoose.helper.setDbVersion('3.4.5');
+	global.__mockgoose = mockgoose;
+}
+						</code></pre>
+			</div>
+		</div>
+		<div class="stack-center ft-fragment">
+			<div class="stacked-center stackCover">
+				<h1> then mocha </h1>
+				<pre class="language-javascript pad100">
+						<code class="language-javascript font25">
+'use strict';
+define( function () {
+
+	return (listTest) => {
+		
+		return new Promise((success) => {
+			let chai = require('chai') // ...
+						</code></pre>
+			</div>
+		</div>
+	</div>
+
+</div>
